@@ -4,7 +4,11 @@
   "description": "for communication between apps with api",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint-fix": "eslint --fix --ext .js,.jsx src"
   },
   "repository": {
     "type": "git",
@@ -32,10 +36,16 @@
     "express-group-routes": "^1.1.0",
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
     "multer": "^1.4.3",
     "nodemon": "^2.0.15",
     "randomstring": "^1.2.1",
     "redis": "^3.1.2",
     "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
   }
 }
