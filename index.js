@@ -5,7 +5,6 @@ const path = require('path');
 
 const application = express();
 const bodyParser = require('body-parser');
-const mongooConfig = require('./src/database');
 
 // const errorHandler = require('./src/app/middlewares/errorHandler');
 

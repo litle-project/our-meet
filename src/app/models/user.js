@@ -1,12 +1,12 @@
-const mongoose = require('../index');
+const mongoose = require('./index');
 
-const usersSchema = new mongoose.Schema(
+const schmea = new mongoose.Schema(
   {
     name: {
       type: String,
       required: true,
     },
-    device_id: {
+    device: {
       type: String,
       required: true,
     },
@@ -18,4 +18,4 @@ const usersSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-module.exports = mongoose.model('Users', usersSchema);
+module.exports = mongoose.model('users', schmea);
